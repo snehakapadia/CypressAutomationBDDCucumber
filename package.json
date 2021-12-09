@@ -1,0 +1,26 @@
+{
+    "name": "ZTechAutomation",
+    "main": "index.js",
+    "scripts": {
+        "clean:reports": "if exist cypress\reports rmdir /S/Q cypress\reports",
+        "scripts": "cypress run --browser firefox",
+        "posttest": "node cucumber-html-report.js",
+        "test": "npm install && npm run scripts || npm run posttest"
+    },
+    "devDependencies": {
+        "cypress": "*",
+        "cypress-cucumber-preprocessor": "*",
+        "cypress-mochawesome-reporter": "*",
+        "multiple-cucumber-html-reporter": "*",
+        "cypress-xpath": "*"
+    },
+    "cypress-cucumber-preprocessor": {
+        "nonGlobalStepDefinitions": true,
+        "cucumberJson": {
+            "generate": true,
+            "outputFolder": "cypress/cucumber-json",
+            "filePrefix": "",
+            "fileSuffix": ".cucumber"
+        }
+    }
+}

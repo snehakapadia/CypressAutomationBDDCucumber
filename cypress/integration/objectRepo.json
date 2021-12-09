@@ -1,0 +1,13 @@
+{
+    "Add to Cart": "//p[text()='<tShirtName>']/../div[text()='Add to cart']",
+    "TShirtPrice": "//p[text()='<tShirtName>']/../div[@class='shelf-item__price']/div[@class='val']",
+    "TShirtPriceCheckout": "//div[@class='float-cart__shelf-container']//p[text()='<tShirtName>']/../following-sibling::div/p",
+    "Subtotal": "//div[text()='SUBTOTAL']/following-sibling::div/p",
+    "Button": "//*[text()='<buttonName>']",
+    "AllPrices": "//div[@class='val']",
+    "checkoutPlus": "//div[@class='float-cart__shelf-container']//p[text()='<tShirtName>']/../following-sibling::div//button[text()='+']",
+    "checkoutMinus": "//div[@class='float-cart__shelf-container']//p[text()='<tShirtName>']/../following-sibling::div//button[text()='-']",
+    "removeTshirt": "//div[@class='float-cart__shelf-container']//p[text()='<tShirtName>']/ancestor::div[@class='shelf-item']/div[@class='shelf-item__del']",
+    "firstAddToCart": "(//div[text()='Add to cart'])[1]",
+    "firstDesc": "(//div[@class='shelf-item__details']/p[@class='desc'])[1]"
+}
